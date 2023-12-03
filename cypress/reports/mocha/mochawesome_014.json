@@ -1,0 +1,111 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2023-12-03T03:42:32.773Z",
+    "end": "2023-12-03T03:42:49.937Z",
+    "duration": 17164,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "cc138f94-b252-49c5-be19-bae4691efde9",
+      "title": "",
+      "fullFile": "cypress\\e2e\\testsE2E\\LogIn User with correct Data.cy.js",
+      "file": "cypress\\e2e\\testsE2E\\LogIn User with correct Data.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "68550bd0-d7ad-4f9b-8fd3-1607416c9b7d",
+          "title": "login With correct data",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Login User with correct email and password",
+              "fullTitle": "login With correct data Login User with correct email and password",
+              "timedOut": null,
+              "duration": 14343,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "createAccountAndLogOut(\"daba111@gmail.com\", \"dalibor\");\n////creating a new account\ncy.visit(\"http://automationexercise.com\");\ncy.get(\".container\").should(\"contain\", \"Home\");\ncy.get(\".container\").contains(\" Signup / Login\").click();\ncy.get(\".container\").find(\".login-form\").then(formLogin => {\n  cy.wrap(formLogin).get(\".login-form\").find('[placeholder=\"Email Address\"]').type(\"daba111@gmail.com\");\n  cy.wrap(formLogin).get(\".login-form\").find('[placeholder=\"Password\"]').type(\"Aurora\");\n  cy.get(\".login-form\").find('[action=\"/login\"]').submit().wait(2000);\n  cy.get(\"#header\").find(\".container\").contains(\"Logged in as \").should(\"contain\", \"Logged in as \");\n  cy.get(\"#header\").find(\".container\").should(\"contain\", \"Delete Account\");\n  cy.get(\"#header\").find(\".container\").contains(\"Delete Account\").click();\n});",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `#id_gender1`, but never found it. Queried from:\n\n              > <div.login-form>",
+                "estack": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `#id_gender1`, but never found it. Queried from:\n\n              > <div.login-form>\n    at Context.eval (webpack://awesome-sites-to-test-on/./cypress/e2e/testsE2E/LogIn User with correct Data.cy.js:14:30)",
+                "diff": null
+              },
+              "uuid": "ef6efa1d-99b5-45c0-8112-52d4fce2f436",
+              "parentUUID": "68550bd0-d7ad-4f9b-8fd3-1607416c9b7d",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "ef6efa1d-99b5-45c0-8112-52d4fce2f436"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 14343,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/mocha",
+        "quite": true,
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

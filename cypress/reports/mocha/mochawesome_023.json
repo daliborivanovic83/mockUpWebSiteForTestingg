@@ -1,0 +1,107 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2023-12-03T03:48:59.911Z",
+    "end": "2023-12-03T03:49:55.636Z",
+    "duration": 55725,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "32173b3d-bfdd-441e-aa33-d2d966596dae",
+      "title": "",
+      "fullFile": "cypress\\e2e\\testsE2E\\Search Products Verify Cart.cy.js",
+      "file": "cypress\\e2e\\testsE2E\\Search Products Verify Cart.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "1efe5416-18b2-4957-92ac-b14066ceeb20",
+          "title": "Search products and Verify cart after login",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Search Products and Verify Cart After Login",
+              "fullTitle": "Search products and Verify cart after login Search Products and Verify Cart After Login",
+              "timedOut": null,
+              "duration": 53369,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "visitHomePage();\ncy.get('[href=\"/products\"]').click();\ncy.get(\".features_items\").should(\"contain\", \"All Products\");\naddProductsToCartOneByOne();\ncheckItemsInContainer();\ncy.get(\".container\").contains(\" Signup / Login\").click();\nsignInWithoutVisitingHomePage(\"suzie@gmail.com\", \"Aurora\"); /// use an exisiting userName password is the same\ncheckItemsInContainer();",
+              "err": {},
+              "uuid": "8235a3e8-cf4b-4a17-98d4-3a87e8158302",
+              "parentUUID": "1efe5416-18b2-4957-92ac-b14066ceeb20",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "8235a3e8-cf4b-4a17-98d4-3a87e8158302"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 53369,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/mocha",
+        "quite": true,
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

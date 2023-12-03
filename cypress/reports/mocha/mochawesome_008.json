@@ -1,0 +1,107 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2023-12-03T03:39:19.877Z",
+    "end": "2023-12-03T03:39:43.236Z",
+    "duration": 23359,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "46ed4cd3-7d24-41ab-b953-aca6f23f29b7",
+      "title": "",
+      "fullFile": "cypress\\e2e\\testsE2E\\Add review on product.cy.js",
+      "file": "cypress\\e2e\\testsE2E\\Add review on product.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "8f655bb4-2d5c-43a0-b20d-6520f43e9bb9",
+          "title": "Add review on product",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Add review on product",
+              "fullTitle": "Add review on product Add review on product",
+              "timedOut": null,
+              "duration": 21065,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "visitHomePage();\ncy.get(\".container\").contains(\"Products\").click();\ncy.get(\".container\").should(\"contain\", \"All Products\");\ncy.get(\".choose\").find('[href=\"/product_details/1\"]').should(\"contain\", \"View Product\").click();\ncy.get('[href=\"#reviews\"]').should(\"contain\", \"Write Your Review\").get(\"#name\").type(\"Dalibor\").get(\"#email\").type(\"ddddd@gmail.com\").get(\"#review\").type(\"This is my review\").get(\"#review-form\").submit().wait(2000).get(\"#review-section\").should(\"exist\").should(\"contain\", \"Thank you for your review.\");",
+              "err": {},
+              "uuid": "40b5e81c-8a96-4355-ae4a-3aa351d9d08c",
+              "parentUUID": "8f655bb4-2d5c-43a0-b20d-6520f43e9bb9",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "40b5e81c-8a96-4355-ae4a-3aa351d9d08c"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 21065,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/mocha",
+        "quite": true,
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

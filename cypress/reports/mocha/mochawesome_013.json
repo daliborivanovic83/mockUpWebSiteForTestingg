@@ -1,0 +1,111 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2023-12-03T03:42:11.729Z",
+    "end": "2023-12-03T03:42:30.175Z",
+    "duration": 18446,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "b5da15fe-d830-4d74-b6ed-82af43e794cd",
+      "title": "",
+      "fullFile": "cypress\\e2e\\testsE2E\\Log out User.cy.js",
+      "file": "cypress\\e2e\\testsE2E\\Log out User.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "a4f8f49c-cc4d-485a-b0f6-04dbdc991e39",
+          "title": "Log out",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Log out a User",
+              "fullTitle": "Log out Log out a User",
+              "timedOut": null,
+              "duration": 16158,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "createAccountAndLogOut(\"daba911@gmail.com\", \"dalibor\"); ////create a new account\nvisitHomePageAndSignInPage();\nfillInLogInData(\"daba911@gmail.com\"); ////use the new account for your tests",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `#id_gender1`, but never found it. Queried from:\n\n              > <div.login-form>",
+                "estack": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `#id_gender1`, but never found it. Queried from:\n\n              > <div.login-form>\n    at Context.eval (webpack://awesome-sites-to-test-on/./cypress/e2e/testsE2E/Log out User.cy.js:15:30)",
+                "diff": null
+              },
+              "uuid": "3ba10196-1a13-48a8-9c67-6ce0ebbde9fa",
+              "parentUUID": "a4f8f49c-cc4d-485a-b0f6-04dbdc991e39",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "3ba10196-1a13-48a8-9c67-6ce0ebbde9fa"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 16158,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/mocha",
+        "quite": true,
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

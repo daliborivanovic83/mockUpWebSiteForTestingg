@@ -1,0 +1,107 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2023-12-03T03:40:08.835Z",
+    "end": "2023-12-03T03:40:49.832Z",
+    "duration": 40997,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "1d996ee0-ab98-44da-93b8-096c9d479b72",
+      "title": "",
+      "fullFile": "cypress\\e2e\\testsE2E\\Contact Us Form.cy.js",
+      "file": "cypress\\e2e\\testsE2E\\Contact Us Form.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "b5aa251d-75b8-48a0-b11c-d719b66c37a1",
+          "title": "Contact us form verification",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Contact us form",
+              "fullTitle": "Contact us form verification Contact us form",
+              "timedOut": null,
+              "duration": 38762,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "contactUsForm();",
+              "err": {},
+              "uuid": "d1a3c0d3-9729-4701-8537-ea5cb73f5476",
+              "parentUUID": "b5aa251d-75b8-48a0-b11c-d719b66c37a1",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "d1a3c0d3-9729-4701-8537-ea5cb73f5476"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 38762,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/mocha",
+        "quite": true,
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

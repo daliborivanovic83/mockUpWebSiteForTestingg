@@ -1,0 +1,107 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2023-12-03T03:52:41.773Z",
+    "end": "2023-12-03T03:52:53.789Z",
+    "duration": 12016,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "ee8a0810-06c5-4f93-822b-1f0803231cc2",
+      "title": "",
+      "fullFile": "cypress\\e2e\\testsE2E\\Verify test Cases Page.cy.js",
+      "file": "cypress\\e2e\\testsE2E\\Verify test Cases Page.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "0a95f14b-e51c-4d2c-92e7-d6f8d16a25c7",
+          "title": "Verify test cases Page",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "verification test cases Page",
+              "fullTitle": "Verify test cases Page verification test cases Page",
+              "timedOut": null,
+              "duration": 9797,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit(\"http://automationexercise.com\");\ncy.get(\".container\").contains(\" Test Cases\").click();\ncy.get(\".container\").contains(\"Test Cases\").should(\"contain\", \"Test Cases\");",
+              "err": {},
+              "uuid": "00c05e39-2f2b-48dc-a0c5-559062af2de6",
+              "parentUUID": "0a95f14b-e51c-4d2c-92e7-d6f8d16a25c7",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "00c05e39-2f2b-48dc-a0c5-559062af2de6"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 9797,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/mocha",
+        "quite": true,
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

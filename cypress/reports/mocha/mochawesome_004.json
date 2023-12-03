@@ -1,0 +1,107 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2023-12-03T03:38:39.866Z",
+    "end": "2023-12-03T03:38:40.432Z",
+    "duration": 566,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "9b51c130-3ebd-4151-b114-27573636ea3e",
+      "title": "",
+      "fullFile": "cypress\\e2e\\apiTests\\PostAllProducts.cy.js",
+      "file": "cypress\\e2e\\apiTests\\PostAllProducts.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "d8ddf5d0-2f21-46c3-b658-481a403924ff",
+          "title": "POST To All Products List",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Post request product list",
+              "fullTitle": "POST To All Products List Post request product list",
+              "timedOut": null,
+              "duration": 536,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.request({\n  method: \"POST\",\n  url: \"https://automationexercise.com/api/productsList\"\n}).then(response => {\n  cy.log(JSON.stringify(response.body));\n  cy.log(JSON.parse(response.body));\n  const data = JSON.parse(response.body);\n  expect(response.status).to.eq(200);\n  expect(data.responseCode).to.eq(405);\n  expect(data.message).to.eq(\"This request method is not supported.\");\n});",
+              "err": {},
+              "uuid": "e610c4ae-57ce-429b-9ea2-f90b7087a184",
+              "parentUUID": "d8ddf5d0-2f21-46c3-b658-481a403924ff",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "e610c4ae-57ce-429b-9ea2-f90b7087a184"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 536,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/mocha",
+        "quite": true,
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

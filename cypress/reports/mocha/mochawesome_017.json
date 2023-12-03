@@ -1,0 +1,107 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2023-12-03T03:44:37.888Z",
+    "end": "2023-12-03T03:45:41.879Z",
+    "duration": 63991,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "d5518e48-6b94-4aa9-9328-86cd7542ff4a",
+      "title": "",
+      "fullFile": "cypress\\e2e\\testsE2E\\Place Order Register before Checkout.cy.js",
+      "file": "cypress\\e2e\\testsE2E\\Place Order Register before Checkout.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "7402f6c2-424c-4e0b-92a7-c954644965ce",
+          "title": "Place your order and register while checking out",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "place order register before  check out",
+              "fullTitle": "Place your order and register while checking out place order register before  check out",
+              "timedOut": null,
+              "duration": 61735,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "createAccount(\"daba009@gmail.com\", \"daliborivanovic\");\naddProductsToCart();\nproceedToCheckoutAndDeleteAccount();",
+              "err": {},
+              "uuid": "2fe315ee-7bbf-4f14-aec4-ccd9fd6efed1",
+              "parentUUID": "7402f6c2-424c-4e0b-92a7-c954644965ce",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "2fe315ee-7bbf-4f14-aec4-ccd9fd6efed1"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 61735,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/mocha",
+        "quite": true,
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

@@ -1,0 +1,107 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2023-12-03T03:42:52.649Z",
+    "end": "2023-12-03T03:43:09.638Z",
+    "duration": 16989,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "0f93f7d7-bb3f-4c57-8fcd-c51017f11bfe",
+      "title": "",
+      "fullFile": "cypress\\e2e\\testsE2E\\Login user with incorrect Data.cy.js",
+      "file": "cypress\\e2e\\testsE2E\\Login user with incorrect Data.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "42ada7ad-3fff-4411-9a4e-b57579fe6c34",
+          "title": "Login in with incorrect data",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "verify login with the wrong user name",
+              "fullTitle": "Login in with incorrect data verify login with the wrong user name",
+              "timedOut": null,
+              "duration": 14140,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit(\"http://automationexercise.com\");\ncy.get(\".container\").contains(\"Home\");\ncy.get(\".container\").contains(\" Signup / Login\").click();\ncy.get(\".container\").find(\".login-form\").then(formLogin => {\n  cy.wrap(formLogin).get(\".login-form\").find('[placeholder=\"Email Address\"]').type(\"dalibori@gmail.com\");\n  cy.wrap(formLogin).get(\".login-form\").find('[placeholder=\"Password\"]').type(\"Aurora19\");\n  cy.get(\".login-form\").find('[action=\"/login\"]').submit().wait(2000);\n  cy.get(\".login-form\").find('[action=\"/login\"]').contains(\"Your email or password is incorrect!\").should(\"contain\", \"Your email or password is incorrect!\");\n});",
+              "err": {},
+              "uuid": "02ced3e3-c06f-44b1-add6-e4942f5f2ed8",
+              "parentUUID": "42ada7ad-3fff-4411-9a4e-b57579fe6c34",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "02ced3e3-c06f-44b1-add6-e4942f5f2ed8"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 14140,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/mocha",
+        "quite": true,
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

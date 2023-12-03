@@ -1,0 +1,107 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2023-12-03T03:51:59.549Z",
+    "end": "2023-12-03T03:52:11.669Z",
+    "duration": 12120,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "ea1d4b7b-488a-4c2b-bf24-2aa2481619cc",
+      "title": "",
+      "fullFile": "cypress\\e2e\\testsE2E\\Verify Scroll Up without 'Arrow' button and Scroll Down functionality.cy.js",
+      "file": "cypress\\e2e\\testsE2E\\Verify Scroll Up without 'Arrow' button and Scroll Down functionality.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "83454a72-63f3-4abd-89d4-18f5d8b2a406",
+          "title": "verify scroll up without arrow key",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Verify Scroll up without arrow Arrow button and scroll down functionality",
+              "fullTitle": "verify scroll up without arrow key Verify Scroll up without arrow Arrow button and scroll down functionality",
+              "timedOut": null,
+              "duration": 9836,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "visitHomePage();\ncy.scrollTo(\"bottom\");\ncy.get(\".single-widget\").first().should(\"contain\", \"Subscription\");\ncy.scrollTo(\"top\").get(\"#slider-carousel\").should(\"contain\", \"Full-Fledged practice website for Automation Engineers\");",
+              "err": {},
+              "uuid": "e1d22d3e-ef85-4c50-8134-00736f5d1be8",
+              "parentUUID": "83454a72-63f3-4abd-89d4-18f5d8b2a406",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "e1d22d3e-ef85-4c50-8134-00736f5d1be8"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 9836,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/mocha",
+        "quite": true,
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

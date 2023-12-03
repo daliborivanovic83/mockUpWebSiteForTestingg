@@ -1,0 +1,107 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2023-12-03T03:38:25.954Z",
+    "end": "2023-12-03T03:38:28.502Z",
+    "duration": 2548,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "4a027e85-b313-4909-9e25-4dd06efaa333",
+      "title": "",
+      "fullFile": "cypress\\e2e\\apiTests\\createUserAcc.cy.js",
+      "file": "cypress\\e2e\\apiTests\\createUserAcc.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "6066fadc-edd5-4798-8be3-ccc7832d98ab",
+          "title": "Create users details",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Post create users details ",
+              "fullTitle": "Create users details Post create users details ",
+              "timedOut": null,
+              "duration": 2515,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.request({\n  method: \"POST\",\n  url: \"https://automationexercise.com/api/createAccount\",\n  qs: {\n    name: \"Daxxx\",\n    email: \"dabaaa@gmail.com\",\n    password: \"Aurora19833\",\n    title: \"Mr\",\n    birth_date: \"31\",\n    birth_month: \"9\",\n    birth_year: \"1793\",\n    first_name: \"Da\",\n    last_name: \"Ba\",\n    company: \"2\",\n    address1: \"Oplenacka 55\",\n    address2: \"Cajkina 11\",\n    country: \"Tunis\",\n    state: \"Africa\",\n    city: \"Kairo\",\n    zipcode: \"333000\",\n    mobile_number: \"1607616644\"\n  }\n}).then(response => {\n  //Asserting the status code to be 200 for successful response\n  expect(response.status).to.eq(200);\n  cy.log(response.body);\n});",
+              "err": {},
+              "uuid": "be8cb830-cce5-4ca4-bc67-c5f97152e7ad",
+              "parentUUID": "6066fadc-edd5-4798-8be3-ccc7832d98ab",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "be8cb830-cce5-4ca4-bc67-c5f97152e7ad"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 2515,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/mocha",
+        "quite": true,
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

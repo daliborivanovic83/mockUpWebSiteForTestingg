@@ -1,0 +1,107 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2023-12-03T03:43:12.076Z",
+    "end": "2023-12-03T03:44:35.792Z",
+    "duration": 83716,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "4e079b80-bdd3-4e2b-8a85-83bd60da9761",
+      "title": "",
+      "fullFile": "cypress\\e2e\\testsE2E\\Place Order Login before Checkout.cy.js",
+      "file": "cypress\\e2e\\testsE2E\\Place Order Login before Checkout.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "baa67f30-4aa2-45b4-8f47-e7cd01eda82e",
+          "title": "Place order Log in before checkout",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "place order log in before Checkout",
+              "fullTitle": "Place order Log in before checkout place order log in before Checkout",
+              "timedOut": null,
+              "duration": 80704,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "createAccountAndLogOut(\"suzie00@gmail.com\", \"suzie\"); //change yur email for every test\nvisitHomePageAndSignin(\"suzie00@gmail.com\", \"Aurora\");\naddProductsToCart();\nproceedToCheckoutAndDeleteAccount();",
+              "err": {},
+              "uuid": "e8c27642-1b38-4e1b-973e-52dc4a415739",
+              "parentUUID": "baa67f30-4aa2-45b4-8f47-e7cd01eda82e",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "e8c27642-1b38-4e1b-973e-52dc4a415739"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 80704,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/mocha",
+        "quite": true,
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}
