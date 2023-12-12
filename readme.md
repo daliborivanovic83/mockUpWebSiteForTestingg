@@ -5,9 +5,9 @@
 
 ## Web Testing 
 
-- https://www.automationexercise.com/ - Website with API backend and test case examples to practice automation.
+## https://www.automationexercise.com/ - Website with API backend and test case examples to practice automation.
 
-  Test Case 1: Register User
+ ##  Test Case 1: Register User
 1. Launch browser
 2. Navigate to url 'http://automationexercise.com'
 3. Verify that home page is visible successfully
@@ -28,7 +28,7 @@
 18. Verify that 'ACCOUNT DELETED!' is visible and click 'Continue' button
 
 *******************************
-Test Case 2: Login User with correct email and password
+## Test Case 2: Login User with correct email and password
 1. Launch browser
 2. Navigate to url 'http://automationexercise.com'
 3. Verify that home page is visible successfully
